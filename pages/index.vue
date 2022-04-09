@@ -5,7 +5,7 @@
         <AuthorCard />
       </div>
       <div class="md:w-2/3 px-8">
-        <!-- <AuthorIntro></AuthorIntro> -->
+        <AuthorIntro></AuthorIntro>
         <Expertise></Expertise>
         <TimeLine></TimeLine>
       </div>
@@ -14,27 +14,26 @@
 </template>
 
 <script>
-// import siteMetadata from "../data/siteMetadata";
-
+import siteMetaInfo from "@/data/sitemetainfo";
 export default {
   data() {
     return {
-      // siteMetadata: siteMetadata,
+      siteMetadata: siteMetaInfo,
     };
   },
-  // head: {
-  //   title: siteMetadata.title,
-  //   meta: [
-  //     { charset: "utf-8" },
-  //     { name: "viewport", content: "width=device-width, initial-scale=1" },
-  //     {
-  //       hid: "description",
-  //       name: "description",
-  //       content: siteMetadata.description,
-  //     },
-  //   ],
-  //   link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-  // },
+  head: {
+    title: siteMetadata.title,
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: siteMetadata.description,
+      },
+    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+  },
 };
 </script>
 
