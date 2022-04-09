@@ -41,7 +41,7 @@
 </template>
 <script>
 import Prism from "~/plugins/prism";
-import siteMetadata from "../../data/siteMetadata";
+import siteMetadata from "../data/siteMetaData.js";
 export default {
   data() {
     return {
