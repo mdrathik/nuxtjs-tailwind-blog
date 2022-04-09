@@ -1,6 +1,6 @@
 # NuxtJs Tailwind Blog
 
-Inspired from [timlrx](tailwind-nextjs-starter-blog) nextJs Blog
+Inspired from [timlrx](https://github.com/timlrx/tailwind-nextjs-starter-blog) nextJs Blog
 
 This is a nuxtjs, Tailwind CSS blogging template. Its supported Markdown for blog.
 ![Drag Racing](thumbnail.png)
