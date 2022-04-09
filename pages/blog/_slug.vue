@@ -7,27 +7,22 @@
       {{ article.title }}
     </h1>
     <div class="flex items-center font-medium mt-6 sm:mx-3 justify-center">
-      <img
-        src="~/assets/author.png"
-        alt=""
-        class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
-      />
       <nuxt-img
-        :src="siteMetaInfo.author_image"
+        :src="siteMetadata.author_image"
         loading="lazy"
         alt=""
         class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
       />
       <div>
         <div class="text-slate-900 dark:text-slate-200">
-          {{ siteMetaInfo.author }}
+          {{ siteMetadata.author }}
         </div>
         <a
           target="_blank"
-          :href="siteMetaInfo.twitter"
+          :href="siteMetadata.twitter"
           class="text-sky-500 hover:text-sky-600 dark:text-sky-400"
         >
-          @{{ siteMetaInfo.twitter_user }}
+          @{{ siteMetadata.twitter_user }}
         </a>
       </div>
     </div>
@@ -46,7 +41,7 @@ export default {
   data() {
     return {
       title: 0,
-      siteMetaInfo: siteMetaInfo,
+      siteMetadata: siteMetaInfo,
     };
   },
   async asyncData({ $content, params }) {
