@@ -60,12 +60,12 @@
 </template>
 
 <script>
-import siteMetadata from "../data/siteMetadata";
+// import siteMetadata from "../data/siteMetadata";
 import BuyMeACoffee from "./BuyMeACoffee.vue";
 export default {
   data() {
     return {
-      siteMetadata: siteMetadata,
+      // siteMetadata: siteMetadata,
     };
   },
   components: { BuyMeACoffee },
