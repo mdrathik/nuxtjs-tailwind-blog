@@ -40,8 +40,8 @@
   </div>
 </template>
 <script>
+import siteMetadata from "../../data/sitemetadata";
 import Prism from "~/plugins/prism";
-import siteMetadata from "../../data/siteMetadata";
 export default {
   data() {
     return {

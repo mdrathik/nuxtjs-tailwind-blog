@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import siteMetadata from "../data/siteMetadata";
+import siteMetadata from "../data/sitemetadata";
 export default {
   data() {
     return {
