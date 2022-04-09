@@ -14,26 +14,27 @@
 </template>
 
 <script>
-import siteMetadata from "../data/sitemetadata";
+// import siteMetadata from "../data/siteMetadata";
+
 export default {
   data() {
     return {
-      siteMetadata: siteMetadata,
+      // siteMetadata: siteMetadata,
     };
   },
-  head: {
-    title: siteMetadata.title,
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: siteMetadata.description,
-      },
-    ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-  },
+  // head: {
+  //   title: siteMetadata.title,
+  //   meta: [
+  //     { charset: "utf-8" },
+  //     { name: "viewport", content: "width=device-width, initial-scale=1" },
+  //     {
+  //       hid: "description",
+  //       name: "description",
+  //       content: siteMetadata.description,
+  //     },
+  //   ],
+  //   link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+  // },
 };
 </script>
 

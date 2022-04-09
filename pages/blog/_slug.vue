@@ -12,13 +12,13 @@
         alt=""
         class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
       /> -->
-      <nuxt-img
+      <!-- <nuxt-img
         :src="siteMetadata.author_image"
         loading="lazy"
         alt=""
         class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
-      />
-      <div>
+      /> -->
+      <!-- <div>
         <div class="text-slate-900 dark:text-slate-200">
           {{ siteMetadata.author }}
         </div>
@@ -29,7 +29,7 @@
         >
           @{{ siteMetadata.twitter_user }}
         </a>
-      </div>
+      </div> -->
     </div>
     <img
       class="mx-auto w-4/5 my-10 rounded-md drop-shadow-sm"
@@ -40,13 +40,13 @@
   </div>
 </template>
 <script>
-import siteMetadata from "../../data/sitemetadata";
 import Prism from "~/plugins/prism";
+// import siteMetadata from "../../data/siteMetadata";
 export default {
   data() {
     return {
       title: 0,
-      siteMetadata: siteMetadata,
+      // siteMetadata: siteMetadata,
     };
   },
   async asyncData({ $content, params }) {
