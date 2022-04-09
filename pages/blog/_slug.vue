@@ -7,29 +7,29 @@
       {{ article.title }}
     </h1>
     <div class="flex items-center font-medium mt-6 sm:mx-3 justify-center">
-      <!-- <img
+      <img
         src="~/assets/author.png"
         alt=""
         class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
-      /> -->
-      <!-- <nuxt-img
-        :src="siteMetadata.author_image"
+      />
+      <nuxt-img
+        :src="siteMetaInfo.author_image"
         loading="lazy"
         alt=""
         class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
-      /> -->
-      <!-- <div>
+      />
+      <div>
         <div class="text-slate-900 dark:text-slate-200">
-          {{ siteMetadata.author }}
+          {{ siteMetaInfo.author }}
         </div>
         <a
           target="_blank"
-          :href="siteMetadata.twitter"
+          :href="siteMetaInfo.twitter"
           class="text-sky-500 hover:text-sky-600 dark:text-sky-400"
         >
-          @{{ siteMetadata.twitter_user }}
+          @{{ siteMetaInfo.twitter_user }}
         </a>
-      </div> -->
+      </div>
     </div>
     <img
       class="mx-auto w-4/5 my-10 rounded-md drop-shadow-sm"
@@ -41,12 +41,12 @@
 </template>
 <script>
 import Prism from "~/plugins/prism";
-// import siteMetadata from "../../data/siteMetadata";
+import siteMetaInfo from "@/data/sitemetainfo";
 export default {
   data() {
     return {
       title: 0,
-      // siteMetadata: siteMetadata,
+      siteMetaInfo: siteMetaInfo,
     };
   },
   async asyncData({ $content, params }) {
