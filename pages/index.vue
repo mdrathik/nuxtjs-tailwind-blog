@@ -18,18 +18,18 @@ import siteMetaInfo from "@/data/sitemetainfo";
 export default {
   data() {
     return {
-      siteMetadata: siteMetaInfo,
+      siteMetaInfo: siteMetaInfo,
     };
   },
   head: {
-    title: siteMetadata.title,
+    title: siteMetaInfo.title,
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: siteMetadata.description,
+        content: siteMetaInfo.description,
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
