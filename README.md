@@ -1,7 +1,5 @@
 # NuxtJs Tailwind Blog
 
-Inspired from [timlrx](https://github.com/timlrx/tailwind-nextjs-starter-blog) nextJs Blog
-
 This is a nuxtjs, Tailwind CSS blogging template. Its supported Markdown for blog
 ![Drag Racing](thumbnail.png)
 
@@ -29,6 +27,8 @@ For detailed explanation on how things work, check out the [documentation](https
       style="height: 60px !important; width: 217px !important"
   /></a>
 
+
+Inspired from [timlrx](https://github.com/timlrx/tailwind-nextjs-starter-blog) nextJs Blog
 ## Spacial Thanks to :
 
 i made the design inspired from them.
